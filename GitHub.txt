@@ -1,0 +1,46 @@
+Free and open source version control system.
+Version control is the management of files and codes over internet and ability to track all possible changes to the files.
+Directory->Folder
+command Line/Terminal->Interface to write in text commands
+CLI->command line interface
+cd->change directory
+code editor->text editor
+repository->Git repository which usually is the project or the folder where the project is kept
+.md->markdown file
+Git is the tool used to track changes 
+Github is a website where you host all of your git repositories
+Git commands:-
+1.clone->Bring repository from github to computer (git clone HTTP)
+2.add->track your files and changes in git(git add <filename>/ .(for adding all)
+3.commit->save files in git (git commit -m "Title" -m "Description")
+4.push->upload git commits to a remote repo like GitHub
+5.pull->download changes from remote repo to your local machine
+6.status->to check the files status as they are uploaded or not
+ssh-keygen -t rsa -b 4096 -C "gopalvarun03@gmail.com" to generate SSH Key then type a file name and a passcode
+ls | grep testkey to search for the SSH key
+cat testkey.pub to get the key
+pbcopy <~/testkey.pub to copy the text in the testkey file
+go to settings on github and add SSH key
+$ eval "$(ssh-agent -s)" 
+ssh-add ~/.ssh/<filename>
+The above 2 lines can be used to link and type them in gitbash.
+git push origin(location for git repo) master(branch name)/main
+git branch -l to get the branch names
+git init to create a new git repo from a local folder
+git remote add origin <HTTP of the new repo>
+git remote -v to show all the connections made already
+now You can use git push origin master / git push -u origin master to set this push path as default
+Git branching is used to create new versions(updates) of the main branch and finally if we wish we can merge
+git checkout(to switch branch) -b(to create new branch) <branch-name>
+git diff <branchname> to find out the difference bw two branches
+git merge <branchname> to merge them
+Then to merge them go to pull request on git hub and merge them
+Now to update the code on local machine use 
+git pull origin master
+git branch -d version-11 to delete the branch
+git commit -am "a" to add and commit a modified file
+git reset HEAD~1 to reset last commit
+git log to view commits
+git reset [file] ->unstages the file, but it preserves the file contents.
+git reset [commit] ->undoes all the commits after the specified commit and preserves the changes locally.
+git reset –hard [commit] ->discards all history and goes back to the specified commit.
